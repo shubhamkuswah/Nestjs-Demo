@@ -9,12 +9,12 @@ import { Connection } from 'typeorm';
 @Module({
   imports: [ContactsModule,
     TypeOrmModule.forRoot({
-      type: 'postgres',
+      type: 'mysql',
       host: 'localhost',
-      port: 41673,
-      username: 'postgress',
-      password: 'sellnews',
-      database: 'mydb',
+      port: 3306,
+      username: 'root',
+      password: 'root',
+      database: 'test',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true
     }),
